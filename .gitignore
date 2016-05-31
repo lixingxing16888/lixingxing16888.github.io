@@ -5,6 +5,7 @@ _site
 .sass-cache
 
 # Numerous always-ignore extensions
+*.bat
 *.diff
 *.err
 *.orig

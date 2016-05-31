@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<div class="blog">
+	<div class="title">
+		{{ page.title }}<br/>
+	</div>
+	<div class="meta">
+		{{ page.date| date: "%Y-%m-%d" }}
+	</div>
+	<div class="content">
+		{{ content }}
+	</div>
+</div>

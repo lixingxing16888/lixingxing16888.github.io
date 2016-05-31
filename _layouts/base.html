@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>李星星的博客</title>
+<link rel="shortcut icon" href="{{ site.baseurl }}/static/images/favicon.ico" />
+<link rel="stylesheet" href="{{ site.baseurl }}/static/style/main.css" />
+</head>
+<body>
+
+<table id="container">
+	<tr id="header">
+		<td colspan="2">
+			<div>
+				<a href="{{ site.baseurl }}/" title="Home">李星星的博客</a><span>自言自语、自说自话</span>
+			</div>
+		</td>
+	</tr>
+	<tr id="bodyer">
+		<td valign="top" width="120px">
+			<ul id="nav">
+				<li><a href="">首页</a></li>
+				<li><a href="">标签</a></li>
+				<li><a href="">关于</a></li>
+				<li><a href="">导航</a></li>
+			</ul>
+		</td>
+		<td valign="top">
+			<div id="main">
+				{{ content }}
+			</div>
+		</td>
+	</tr>
+	<tr id="footer">
+		<td></td>
+		<td>
+		    <div>
+                &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+            </div>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
